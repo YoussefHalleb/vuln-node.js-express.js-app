@@ -4,7 +4,8 @@ RUN mkdir -p /build
 
 COPY ./package.json ./package-lock.json /build/
 WORKDIR /build
-RUN npm ci
+RUN npm install
+
 
 COPY . /build
 
