@@ -13,5 +13,5 @@ WORKDIR /home/node/src
 
 COPY --from=builder /build ./
 
-EXPOSE 5000
+EXPOSE 3000
 CMD ["npm","start"]
